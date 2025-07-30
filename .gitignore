@@ -1,0 +1,23 @@
+# Build directories
+bin/
+obj/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# VS settings
+.vs/
+
+# OS files
+Thumbs.db
+.DS_Store
+
+# NuGet packages
+packages/
+*.nupkg
+
+# Logs
+*.log

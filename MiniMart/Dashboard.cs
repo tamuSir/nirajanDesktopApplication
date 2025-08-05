@@ -84,5 +84,39 @@ namespace MiniMart
             frmBooking fb =new frmBooking();
             fb.Show();
         }
+
+        private bool isLogOut = false;
+        private void logoutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DialogResult dr = MessageBox.Show("Are you sure want to Logout?", "Confirm Logout!", MessageBoxButtons.YesNo,MessageBoxIcon.Question);
+
+            if (dr == DialogResult.Yes)
+            {
+                isLogOut = true;
+                frmLogin fl = new frmLogin();
+                fl.Show();
+                this.Close();
+            }
+        }
+
+        private void Dashboard_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (isLogOut)
+            {
+                return;
+            }
+            else 
+            {
+                DialogResult result = MessageBox.Show("Are you sure you want to Close Application?", "Confirm Exit",
+                       MessageBoxButtons.YesNo,
+                       MessageBoxIcon.Question
+                   );
+
+                if (result == DialogResult.No)
+                {
+                    e.Cancel = true;
+                }
+            }                
+        }
     }
 }

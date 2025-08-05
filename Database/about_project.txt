@@ -1,0 +1,24 @@
+ 1) Installed Package 
+ # Dapper
+
+ 2) This project is in (MVC) and (Dapper Deo) is use there 
+  
+ 	# Model
+	  All properties 
+
+	# Repository
+	  Database implementaion
+
+3) Use this project
+	
+	#Store procedure
+	 => using flag(insert, update, delete)
+	
+	# seller cannot CURD User only admin can CURD the user
+
+4) admin password 
+	# user = admin
+	#password = admin
+
+ This is the basic CURD mart with role based Desktop application.	  
+	
